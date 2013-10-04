@@ -32,6 +32,10 @@ TARGET_OTA_ASSERT_DEVICE := hltetmo,SM-900T
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
 #SELinux
-BOARD_SEPOLICY_UNION := file_contexts
+BOARD_SEPOLICY_UNION := \
+    file_contexts \
+    file.te \
+    device.te \
+
 BOARD_SEPOLICY_DIRS := \
     device/samsung/hltetmo/selinux
