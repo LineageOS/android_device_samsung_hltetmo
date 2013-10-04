@@ -38,4 +38,6 @@ BOARD_SEPOLICY_UNION := \
     device.te \
 
 BOARD_SEPOLICY_DIRS := \
-    device/samsung/hltetmo/selinux
+    device/samsung/hltetmo/sepolicy
+
+TARGET_RECOVERY_FSTAB := device/samsung/hltetmo/rootdir/etc/fstab.qcom
