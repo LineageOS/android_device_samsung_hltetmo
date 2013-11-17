@@ -14,10 +14,17 @@
 
 $(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
 
+# Media config
+PRODUCT_COPY_FILES += \
+    device/samsung/hltetmo/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    device/samsung/hltetmo/configs/media_profiles.xml:system/etc/media_profiles.xml \
+
 # Device Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/hltetmo/overlay
 # common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/hltexx/overlay-gsm
+
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Inherit from hltexx-common
 $(call inherit-product, device/samsung/hltexx/hltexx-common.mk)

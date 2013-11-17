@@ -24,3 +24,5 @@ TARGET_OTA_ASSERT_DEVICE := hltetmo,SM-N900T
 # Kernel source and configs
 TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hltetmo_defconfig
 TARGET_KERNEL_TIMA_CONFIG := tima_defconfig
+
+TARGET_QCOM_DISPLAY_VARIANT :=
