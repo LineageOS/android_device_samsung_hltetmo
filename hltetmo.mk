@@ -14,6 +14,8 @@
 
 $(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
 
+TARGET_NFC_TECH := nxp
+
 # Media config
 PRODUCT_COPY_FILES += \
     device/samsung/hltetmo/configs/media_codecs.xml:system/etc/media_codecs.xml \
