@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common hltexx device
--include device/samsung/hltexx/BoardConfigCommon.mk
+# inherit from hlte-common device
+-include device/samsung/hlte-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/hltetmo/BoardConfigVendor.mk

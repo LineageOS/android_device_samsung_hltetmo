@@ -8,8 +8,8 @@
     "target_path": "device/samsung/msm8960-common"
   },
   {
-    "repository": "android_device_samsung_hltexx",
-    "target_path": "device/samsung/hltexx"
+    "repository": "android_device_samsung_hlte-common",
+    "target_path": "device/samsung/hlte-common"
   },
   {
     "repository": "android_hardware_samsung",

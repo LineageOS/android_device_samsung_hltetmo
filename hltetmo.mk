@@ -24,9 +24,9 @@ PRODUCT_COPY_FILES += \
 # Device Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/hltetmo/overlay
 # common overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/hltexx/overlay-gsm
+DEVICE_PACKAGE_OVERLAYS += device/samsung/hlte-common/overlay-gsm
 
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
-# Inherit from hltexx-common
-$(call inherit-product, device/samsung/hltexx/hltexx-common.mk)
+# Inherit from hlte-common
+$(call inherit-product, device/samsung/hlte-common/hlte-common.mk)
