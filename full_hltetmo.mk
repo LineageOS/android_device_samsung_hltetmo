@@ -27,7 +27,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/hltetmo/hltetmo.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_hltetmo
 PRODUCT_DEVICE := hltetmo
 PRODUCT_MANUFACTURER := samsung

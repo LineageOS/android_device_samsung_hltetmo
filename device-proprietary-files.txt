@@ -1,16 +1,6 @@
 # Add device specific blobs here
-vendor/firmware/BT_FW_VER_BCM4339_003.001.009.0031.0130_ORC_H-TMO.hcd
 vendor/firmware/libpn547_fw.so
 vendor/firmware/libpn547_fw_pku.so
 vendor/firmware/libpn547_fw_platform.so
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
-etc/firmware/wcd9320/wcd9320_mbhc.bin
 lib/libsensirion_h_4.so
-lib/libsec-ril.so
-lib/libril.so
 lib/hw/nfc.MSM8974.so
-lib/libaudio-ril.so
-lib/librilutils.so
-lib/libril-qcril-hook-oem.so
-
