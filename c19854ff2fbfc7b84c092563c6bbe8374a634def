@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_334993d1",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2013-12-28T13:23:07Z",
+      "side": 0,
+      "message": "Need to add sensors.msm8974.so to match libsensirion_h_4.so",
+      "revId": "c19854ff2fbfc7b84c092563c6bbe8374a634def",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
