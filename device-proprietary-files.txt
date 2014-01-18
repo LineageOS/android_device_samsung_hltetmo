@@ -2,5 +2,4 @@
 vendor/firmware/libpn547_fw.so
 vendor/firmware/libpn547_fw_pku.so
 vendor/firmware/libpn547_fw_platform.so
-lib/libsensirion_h_4.so
 lib/hw/nfc.MSM8974.so
