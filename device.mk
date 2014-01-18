@@ -12,12 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/hltenxp/hltenxp-vendor.mk)
 
 TARGET_NFC_TECH := nxp
-
-# Device Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/hltetmo/overlay
 
 # Inherit from hlte-common
 $(call inherit-product, device/samsung/hlte-common/hlte-common.mk)
