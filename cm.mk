@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/hltetmo/full_hltetmo.mk)
+$(call inherit-product, device/samsung/hltenxp/full_hltnxp.mk)
 
 ## Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/gsm.mk)
@@ -28,6 +28,6 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=hltetmo TARGET_DEVICE=hltetmo BUILD_FINGERPRINT="samsung/hltetmo/hltetmo:4.3/JSS15J/N900TUVUBMI7:user/release-keys" PRIVATE_BUILD_DESC="hltetmo-user 4.3 JSS15J N900TUVUBMI7 release-keys"
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_hltetmo
-PRODUCT_DEVICE := hltetmo
+PRODUCT_NAME := cm_hltenxp
+PRODUCT_DEVICE := hltenxp
 PRODUCT_MODEL := SM-N900T
