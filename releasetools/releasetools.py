@@ -1,3 +1,4 @@
+# Copyright (C) 2012 The Android Open Source Project
 # Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,19 +12,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+#
 
-# inherit from hlte-common device
--include device/samsung/hlte-common/BoardConfigCommon.mk
+"""Custom OTA commands for d2lte devices"""
 
-# inherit from the proprietary version
--include vendor/samsung/hltetmo/BoardConfigVendor.mk
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := hltetmo,SM-N900T,hltecan,hlteatt,hltevzw
-
-# Kernel source and configs
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hltetmo_defconfig
-
-
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/hltenci/releasetools
+def FullOTA_InstallEnd(info):
+  info.script.AppendExtra('run_program("/system/bin/variant.sh");')
+  info.script.AppendExtra('delete("/system/bin/variant.sh");')
