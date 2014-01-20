@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a5ae5dd_01ec27c6",
+        "filename": "cm.mk",
+        "patchSetId": 12
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2014-01-20T21:32:13Z",
+      "side": 1,
+      "message": "recommend full_hltenxp.mk",
+      "revId": "334714c056068915462804e768365600f92dfb2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
