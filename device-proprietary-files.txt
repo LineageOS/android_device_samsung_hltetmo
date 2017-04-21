@@ -1,13 +1,5 @@
 # Samsung Package Version: N900TUVSFPL1_N900TTMBFPL1_TMB, unless pinned
 
-# GPS
-bin/gsiff_daemon
-etc/permissions/com.qualcomm.location.xml
-lib/libloc_api_v02.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-
 # NFC
 vendor/firmware/libpn547_fw.so
 vendor/firmware/libpn547_fw_platform.so
