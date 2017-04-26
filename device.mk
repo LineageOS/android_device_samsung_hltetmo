@@ -21,6 +21,7 @@ $(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
 
 # NFC
 PRODUCT_PACKAGES += \
+    libpn547_fw \
     nfc_nci.pn54x.default
 
 PRODUCT_COPY_FILES += \

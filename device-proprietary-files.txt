@@ -1,10 +1,5 @@
 # Samsung Package Version: N900TUVSFPL1_N900TTMBFPL1_TMB, unless pinned
 
-# NFC
-vendor/firmware/libpn547_fw.so
-vendor/firmware/libpn547_fw_platform.so
-vendor/firmware/libpn547_fw_pku.so
-
 # Qualcomm framework
 lib/libmdmdetect.so
 vendor/lib/libconfigdb.so
