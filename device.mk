@@ -20,9 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
 
 # NFC
+PRODUCT_PACKAGES += \
+    nfc_nci.pn54x.default
+
 PRODUCT_COPY_FILES += \
-    device/samsung/hltetmo/configs/security_nfc_profile.dat:system/etc/security_nfc_profile.dat \
-    device/samsung/hltetmo/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+    $(LOCAL_PATH)/configs/security_nfc_profile.dat:system/etc/security_nfc_profile.dat \
+    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
