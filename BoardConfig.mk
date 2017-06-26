@@ -21,7 +21,6 @@ TARGET_OTA_ASSERT_DEVICE := hlte,hltecan,hltetmo
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hltetmo/init/init_hltetmo.cpp
-TARGET_UNIFIED_DEVICE := true
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlte_tmo_defconfig

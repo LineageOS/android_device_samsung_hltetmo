@@ -51,16 +51,16 @@ void init_target_properties()
 
     if (bootloader.find("N900W8") == 0) {
         /* hltecan */
-        property_set("ro.build.fingerprint", "samsung/hltevl/hltecan:5.0/LRX21V/N900W8VLU2DPG1:user/release-keys");
-        property_set("ro.build.description", "hltevl-user 5.0 LRX21V N900W8VLU2DPG1 release-keys");
-        property_set("ro.product.model", "SM-N900W8");
-        property_set("ro.product.device", "hltecan");
+        property_override("ro.build.fingerprint", "samsung/hltevl/hltecan:5.0/LRX21V/N900W8VLU2DPG1:user/release-keys");
+        property_override("ro.build.description", "hltevl-user 5.0 LRX21V N900W8VLU2DPG1 release-keys");
+        property_override("ro.product.model", "SM-N900W8");
+        property_override("ro.product.device", "hltecan");
     } else if (bootloader.find("N900T") == 0) {
         /* hltetmo */
-        property_set("ro.build.fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVSFPL1:user/release-keys");
-        property_set("ro.build.description", "hltetmo-user 5.0 LRX21V N900TUVSFPL1 release-keys");
-        property_set("ro.product.model", "SM-N900T");
-        property_set("ro.product.device", "hltetmo");
+        property_override("ro.build.fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVSFPL1:user/release-keys");
+        property_override("ro.build.description", "hltetmo-user 5.0 LRX21V N900TUVSFPL1 release-keys");
+        property_override("ro.product.model", "SM-N900T");
+        property_override("ro.product.device", "hltetmo");
     }
     gsm_properties();
 
