@@ -1,0 +1,31 @@
+# Samsung Package Version: N900VVRSEPL1_N900VVZWEPL1_VZW, unless pinned
+
+# Qualcomm framework
+lib/libmdmdetect.so:blobs/vzw/lib/libmdmdetect.so
+vendor/lib/libconfigdb.so:blobs/vzw/vendor/lib/libconfigdb.so
+vendor/lib/libdiag.so:blobs/vzw/vendor/lib/libdiag.so
+vendor/lib/libdsutils.so:blobs/vzw/vendor/lib/libdsutils.so
+vendor/lib/libidl.so:blobs/vzw/vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so:blobs/vzw/vendor/lib/libqcci_legacy.so
+vendor/lib/libqmi.so:blobs/vzw/vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so:blobs/vzw/vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_qmux.so:blobs/vzw/vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so:blobs/vzw/vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so:blobs/vzw/vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so:blobs/vzw/vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so:blobs/vzw/vendor/lib/libqmiservices.so
+
+# Radio
+bin/efsks:blobs/vzw/bin/efsks
+bin/ks:blobs/vzw/bin/ks
+bin/qcks:blobs/vzw/bin/qcks
+bin/qmuxd:blobs/vzw/bin/qmuxd
+bin/rfs_access:blobs/vzw/bin/rfs_access
+bin/rild:blobs/vzw/bin/rild
+bin/rmt_storage:blobs/vzw/bin/rmt_storage
+lib/libreference-ril.so:blobs/vzw/lib/libreference-ril.so
+lib/libril.so:blobs/vzw/lib/libril.so
+lib/libsec-ril.so:blobs/vzw/lib/libsec-ril.so
+lib/libsecnativefeature.so:blobs/vzw/lib/libsecnativefeature.so
+lib/libsecril-client.so:blobs/vzw/lib/libsecril-client.so
+vendor/lib/libril-qcril-hook-oem.so:blobs/vzw/vendor/lib/libril-qcril-hook-oem.so
