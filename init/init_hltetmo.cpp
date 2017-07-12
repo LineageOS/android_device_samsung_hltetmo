@@ -57,8 +57,8 @@ void init_target_properties()
         property_override("ro.product.device", "hltecan");
     } else if (bootloader.find("N900T") == 0) {
         /* hltetmo */
-        property_override("ro.build.fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVSFPL1:user/release-keys");
-        property_override("ro.build.description", "hltetmo-user 5.0 LRX21V N900TUVSFPL1 release-keys");
+        property_override("ro.build.fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVUFQD2:user/release-keys");
+        property_override("ro.build.description", "hltetmo-user 5.0 LRX21V N900TUVUFQD2 release-keys");
         property_override("ro.product.model", "SM-N900T");
         property_override("ro.product.device", "hltetmo");
     }
