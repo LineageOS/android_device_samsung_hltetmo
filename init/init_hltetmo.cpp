@@ -72,6 +72,13 @@ void init_target_properties()
         property_override("ro.product.model", "SM-N900T");
         property_override("ro.product.device", "hltetmo");
         gsm_properties();
+    } else if (bootloader.find("N900V") == 0) {
+        /* hltevzw */
+        property_override("ro.build.fingerprint", "Verizon/hltevzw/hltevzw:5.0/LRX21V/N900VVRSEPL1:user/release-keys");
+        property_override("ro.build.description", "hltevzw-user 5.0 LRX21V N900VVRSEPL1 release-keys");
+        property_override("ro.product.model", "SM-N900V");
+        property_override("ro.product.device", "hltevzw");
+        cdma_properties("Verizon", "311480", "10", "1");
     } else if (bootloader.find("N900W8") == 0) {
         /* hltecan */
         property_override("ro.build.fingerprint", "samsung/hltevl/hltecan:5.0/LRX21V/N900W8VLU2DPG1:user/release-keys");
