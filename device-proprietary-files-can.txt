@@ -1,20 +1,5 @@
 # Samsung Package Version: N900W8VLU2DPG1_N900W8OYADPG1_RWC, unless pinned
 
-# Qualcomm framework
-lib/libmdmdetect.so:blobs/can/lib/libmdmdetect.so
-vendor/lib/libconfigdb.so:blobs/can/vendor/lib/libconfigdb.so
-vendor/lib/libdiag.so:blobs/can/vendor/lib/libdiag.so
-vendor/lib/libdsutils.so:blobs/can/vendor/lib/libdsutils.so
-vendor/lib/libidl.so:blobs/can/vendor/lib/libidl.so
-vendor/lib/libqcci_legacy.so:blobs/can/vendor/lib/libqcci_legacy.so
-vendor/lib/libqmi.so:blobs/can/vendor/lib/libqmi.so
-vendor/lib/libqmi_cci.so:blobs/can/vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_client_qmux.so:blobs/can/vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so:blobs/can/vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so:blobs/can/vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_encdec.so:blobs/can/vendor/lib/libqmi_encdec.so
-vendor/lib/libqmiservices.so:blobs/can/vendor/lib/libqmiservices.so
-
 # Radio
 bin/efsks:blobs/can/bin/efsks
 bin/ks:blobs/can/bin/ks
