@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
-   Copyright (c) 2017, The LineageOS Project. All rights reserved.
+   Copyright (c) 2017-2018, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -28,12 +28,15 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "vendor_init.h"
+#include <android-base/properties.h>
+
 #include "property_service.h"
+#include "vendor_init.h"
 #include "log.h"
-#include "util.h"
 
 #include "init_msm8974.h"
+
+using android::base::GetProperty;
 
 void set_rild_libpath(char const *variant)
 {
@@ -72,11 +75,11 @@ void gsm_properties(char const *rild_lib_variant)
 
 void init_target_properties()
 {
-    std::string platform = property_get("ro.board.platform");
+    std::string platform = GetProperty("ro.board.platform", "");
     if (platform != ANDROID_TARGET)
         return;
 
-    std::string bootloader = property_get("ro.bootloader");
+    std::string bootloader = GetProperty("ro.bootloader", "");
 
     if (bootloader.find("N900R4") == 0) {
         /* hlteusc */
@@ -110,6 +113,7 @@ void init_target_properties()
         gsm_properties("tmo");
     }
 
-    std::string device = property_get("ro.product.device");
-    INFO("Found bootloader id %s setting build properties for %s device\n", bootloader.c_str(), device.c_str());
+    std::string device = GetProperty("ro.product.device", "");
+    LOG(INFO) << "Found bootloader id " << bootloader <<  " setting build properties for "
+	    << device <<  " device" << std::endl;
 }
