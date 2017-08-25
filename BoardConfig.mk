@@ -23,7 +23,7 @@ TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hltetmo/init/init_hltetmo.cpp
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlte_tmo_defconfig
+TARGET_KERNEL_CONFIG := lineage_hlte_pn547_defconfig
 
 # NFC
 BOARD_NFC_CHIPSET := pn547
