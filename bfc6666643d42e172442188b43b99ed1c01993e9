@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a12987cc_da5ab650",
+        "filename": "init/init_hltetmo.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2017-10-16T23:23:34Z",
+      "side": 1,
+      "message": "duplicate. And:\n\ncdma_properties(\"U.S.Cellular\", \"311220\", \"10\", \"0\");",
+      "range": {
+        "startLine": 74,
+        "startChar": 8,
+        "endLine": 75,
+        "endChar": 61
+      },
+      "revId": "bfc6666643d42e172442188b43b99ed1c01993e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
