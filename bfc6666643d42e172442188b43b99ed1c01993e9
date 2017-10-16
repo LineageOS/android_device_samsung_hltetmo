@@ -22,6 +22,30 @@
       "revId": "bfc6666643d42e172442188b43b99ed1c01993e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "95c79413_9d8af7d1",
+        "filename": "init/init_hltetmo.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2017-10-16T23:28:49Z",
+      "side": 1,
+      "message": "Done. Copy pasta fails. I dunno why the numeric in the old tree was wrong.",
+      "parentUuid": "a12987cc_da5ab650",
+      "range": {
+        "startLine": 74,
+        "startChar": 8,
+        "endLine": 75,
+        "endChar": 61
+      },
+      "revId": "bfc6666643d42e172442188b43b99ed1c01993e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
