@@ -16,6 +16,7 @@
 
 
 case $BOOTLOADER in
+  N900R4*)     VARIANT="usc" ;;
   N900V*)      VARIANT="vzw" ;;
   N900W8*)     VARIANT="can" ;;
   *)           VARIANT="tmo" ;;

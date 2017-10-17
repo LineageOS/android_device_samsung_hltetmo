@@ -65,7 +65,14 @@ void init_target_properties()
 
     std::string bootloader = property_get("ro.bootloader");
 
-    if (bootloader.find("N900T") == 0) {
+    if (bootloader.find("N900R4") == 0) {
+        /* hlteusc */
+        property_override("ro.build.fingerprint", "samsung/hlteusc/hlteusc:5.0/LRX21V/N900R4TYUDPE2:user/release-keys");
+        property_override("ro.build.description", "hlteusc-user 5.0 LRX21V N900R4TYUDPE2 release-keys");
+        property_override("ro.product.model", "SM-N900R4");
+        property_override("ro.product.device", "hlteusc");
+        cdma_properties("U.S. Cellular", "311220", "10", "0");
+    } else if (bootloader.find("N900T") == 0) {
         /* hltetmo */
         property_override("ro.build.fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVUFQD2:user/release-keys");
         property_override("ro.build.description", "hltetmo-user 5.0 LRX21V N900TUVUFQD2 release-keys");
