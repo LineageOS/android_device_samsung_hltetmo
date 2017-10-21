@@ -1,3 +1,2 @@
 # Radio - pinned to N900R4TYUDPE2_N900R4USCDPE2_USC
-lib/libril.so:blobs/usc/lib/libril.so|97755078a94976dc259d79ea7fb0f8b90bbe2ab2
 lib/libsec-ril.so:blobs/usc/lib/libsec-ril.so|e1a1a50f7bd1f2f047def84b55178eb454fa2949

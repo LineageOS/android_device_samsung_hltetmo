@@ -1,3 +1,2 @@
 # Radio - pinned to N900VVRSEPL1_N900VVZWEPL1_VZW
-lib/libril.so:blobs/vzw/lib/libril.so|1753df539769b7c7c5daa2218803bccfdc1c881a
 lib/libsec-ril.so:blobs/vzw/lib/libsec-ril.so|baf2fc3b789fc540d1fb96170660d89dcb8ec083
