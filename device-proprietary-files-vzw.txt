@@ -1,16 +1,3 @@
-# Samsung Package Version: N900VVRSEPL1_N900VVZWEPL1_VZW, unless pinned
-
-# Radio
-bin/efsks:blobs/vzw/bin/efsks
-bin/ks:blobs/vzw/bin/ks
-bin/qcks:blobs/vzw/bin/qcks
-bin/qmuxd:blobs/vzw/bin/qmuxd
-bin/rfs_access:blobs/vzw/bin/rfs_access
-bin/rild:blobs/vzw/bin/rild
-bin/rmt_storage:blobs/vzw/bin/rmt_storage
-lib/libreference-ril.so:blobs/vzw/lib/libreference-ril.so
-lib/libril.so:blobs/vzw/lib/libril.so
-lib/libsec-ril.so:blobs/vzw/lib/libsec-ril.so
-lib/libsecnativefeature.so:blobs/vzw/lib/libsecnativefeature.so
-lib/libsecril-client.so:blobs/vzw/lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so:blobs/vzw/vendor/lib/libril-qcril-hook-oem.so
+# Radio - pinned to N900VVRSEPL1_N900VVZWEPL1_VZW
+lib/libril.so:blobs/vzw/lib/libril.so|1753df539769b7c7c5daa2218803bccfdc1c881a
+lib/libsec-ril.so:blobs/vzw/lib/libsec-ril.so|baf2fc3b789fc540d1fb96170660d89dcb8ec083

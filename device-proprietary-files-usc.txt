@@ -1,16 +1,3 @@
-# Samsung Package Version: N900R4TYUDPE2_N900R4USCDPE2_USC, unless pinned
-
-# Radio
-bin/efsks:blobs/usc/bin/efsks
-bin/ks:blobs/usc/bin/ks
-bin/qcks:blobs/usc/bin/qcks
-bin/qmuxd:blobs/usc/bin/qmuxd
-bin/rfs_access:blobs/usc/bin/rfs_access
-bin/rild:blobs/usc/bin/rild
-bin/rmt_storage:blobs/usc/bin/rmt_storage
-lib/libreference-ril.so:blobs/usc/lib/libreference-ril.so
-lib/libril.so:blobs/usc/lib/libril.so
-lib/libsec-ril.so:blobs/usc/lib/libsec-ril.so
-lib/libsecnativefeature.so:blobs/usc/lib/libsecnativefeature.so
-lib/libsecril-client.so:blobs/usc/lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so:blobs/usc/vendor/lib/libril-qcril-hook-oem.so
+# Radio - pinned to N900R4TYUDPE2_N900R4USCDPE2_USC
+lib/libril.so:blobs/usc/lib/libril.so|97755078a94976dc259d79ea7fb0f8b90bbe2ab2
+lib/libsec-ril.so:blobs/usc/lib/libsec-ril.so|e1a1a50f7bd1f2f047def84b55178eb454fa2949

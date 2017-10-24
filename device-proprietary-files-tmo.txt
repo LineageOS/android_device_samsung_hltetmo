@@ -1,16 +1,3 @@
-# Samsung Package Version: N900TUVUFQD2_N900TTMBFQD2_TMB, unless pinned
-
-# Radio
-bin/efsks:blobs/tmo/bin/efsks
-bin/ks:blobs/tmo/bin/ks
-bin/qcks:blobs/tmo/bin/qcks
-bin/qmuxd:blobs/tmo/bin/qmuxd
-bin/rfs_access:blobs/tmo/bin/rfs_access
-bin/rild:blobs/tmo/bin/rild
-bin/rmt_storage:blobs/tmo/bin/rmt_storage
-lib/libreference-ril.so:blobs/tmo/lib/libreference-ril.so
-lib/libril.so:blobs/tmo/lib/libril.so
-lib/libsec-ril.so:blobs/tmo/lib/libsec-ril.so
-lib/libsecnativefeature.so:blobs/tmo/lib/libsecnativefeature.so
-lib/libsecril-client.so:blobs/tmo/lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so:blobs/tmo/vendor/lib/libril-qcril-hook-oem.so
+# Radio - pinned to N900TUVUFQD2_N900TTMBFQD2_TMB
+lib/libril.so:blobs/tmo/lib/libril.so|e59e390efa387667fbb0bc7fa809e00fabb5617f
+lib/libsec-ril.so:blobs/tmo/lib/libsec-ril.so|3008534fba31ebe71f9690afe4bf8786a28cf8c8

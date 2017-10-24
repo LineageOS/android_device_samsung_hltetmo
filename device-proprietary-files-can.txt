@@ -1,16 +1,3 @@
-# Samsung Package Version: N900W8VLU2DPG1_N900W8OYADPG1_RWC, unless pinned
-
-# Radio
-bin/efsks:blobs/can/bin/efsks
-bin/ks:blobs/can/bin/ks
-bin/qcks:blobs/can/bin/qcks
-bin/qmuxd:blobs/can/bin/qmuxd
-bin/rfs_access:blobs/can/bin/rfs_access
-bin/rild:blobs/can/bin/rild
-bin/rmt_storage:blobs/can/bin/rmt_storage
-lib/libreference-ril.so:blobs/can/lib/libreference-ril.so
-lib/libril.so:blobs/can/lib/libril.so
-lib/libsec-ril.so:blobs/can/lib/libsec-ril.so
-lib/libsecnativefeature.so:blobs/can/lib/libsecnativefeature.so
-lib/libsecril-client.so:blobs/can/lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so:blobs/can/vendor/lib/libril-qcril-hook-oem.so
+# Radio - pinned to N900W8VLU2DPG1_N900W8OYADPG1_RWC
+lib/libril.so:blobs/can/lib/libril.so|6b8b97f341f87bc75f6ab78c20b67aeb2dc28c67
+lib/libsec-ril.so:blobs/can/lib/libsec-ril.so|5e39c98f1dde89b85af4fbcae0b41fa176ef3606
