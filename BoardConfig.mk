@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from common hlte
--include device/samsung/hlte-common/BoardConfigCommon.mk
+include device/samsung/hlte-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := hlte,hltecan,hltetmo,hlteusc,hltevzw
 
@@ -27,6 +27,9 @@ TARGET_KERNEL_CONFIG := lineage_hlte_pn547_defconfig
 
 # NFC
 BOARD_NFC_CHIPSET := pn547
+
+# Radio/RIL
+include $(COMMON_PATH)/radio/single/board.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/hltetmo/BoardConfigVendor.mk
