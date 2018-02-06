@@ -1,0 +1,2 @@
+# NFC Firmware
+vendor/firmware/libpn547_fw.so|a242658ae5dc0f3e192188b4a9845879ee43cd18
