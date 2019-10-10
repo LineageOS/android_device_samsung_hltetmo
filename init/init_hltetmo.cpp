@@ -41,31 +41,35 @@ void vendor_load_properties()
 
     if (bootloader.find("N900R4") == 0) {
         /* hlteusc */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hlteusc/hlteusc:5.0/LRX21V/N900R4TYUDPE2:user/release-keys");
         property_override("ro.build.description", "hlteusc-user 5.0 LRX21V N900R4TYUDPE2 release-keys");
-        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900R4");
-        property_override_dual("ro.product.device", "ro.product.vendor.device", "hlteusc");
+        set_ro_product_prop("device", "hlteusc");
+        set_ro_product_prop("fingerprint", "samsung/hlteusc/hlteusc:5.0/LRX21V/N900R4TYUDPE2:user/release-keys");
+        set_ro_product_prop("model", "SM-N900R4");
+        set_ro_product_prop("name", "hlteusc");
         cdma_properties("U.S. Cellular", "311220", "0", "10", "usc");
     } else if (bootloader.find("N900T") == 0) {
         /* hltetmo */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVUFQD2:user/release-keys");
         property_override("ro.build.description", "hltetmo-user 5.0 LRX21V N900TUVUFQD2 release-keys");
-        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900T");
-        property_override_dual("ro.product.device", "ro.product.vendor.device", "hltetmo");
+        set_ro_product_prop("device", "hltetmo");
+        set_ro_product_prop("fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVUFQD2:user/release-keys");
+        set_ro_product_prop("model", "SM-N900T");
+        set_ro_product_prop("name", "hltetmo");
         gsm_properties("9", "tmo");
     } else if (bootloader.find("N900V") == 0) {
         /* hltevzw */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Verizon/hltevzw/hltevzw:5.0/LRX21V/N900VVRSEPL1:user/release-keys");
         property_override("ro.build.description", "hltevzw-user 5.0 LRX21V N900VVRSEPL1 release-keys");
-        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900V");
-        property_override_dual("ro.product.device", "ro.product.vendor.device", "hltevzw");
+        set_ro_product_prop("device", "hltevzw");
+        set_ro_product_prop("fingerprint", "Verizon/hltevzw/hltevzw:5.0/LRX21V/N900VVRSEPL1:user/release-keys");
+        set_ro_product_prop("model", "SM-N900V");
+        set_ro_product_prop("name", "hltevzw");
         cdma_properties("Verizon", "311480", "1", "10", "vzw");
     } else if (bootloader.find("N900W8") == 0) {
         /* hltecan */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltevl/hltecan:5.0/LRX21V/N900W8VLU2DPG1:user/release-keys");
         property_override("ro.build.description", "hltevl-user 5.0 LRX21V N900W8VLU2DPG1 release-keys");
-        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900W8");
-        property_override_dual("ro.product.device", "ro.product.vendor.device", "hltecan");
+        set_ro_product_prop("device", "hltecan");
+        set_ro_product_prop("fingerprint", "samsung/hltevl/hltecan:5.0/LRX21V/N900W8VLU2DPG1:user/release-keys");
+        set_ro_product_prop("model", "SM-N900W8");
+        set_ro_product_prop("name", "hltecan");
         gsm_properties("9", "can");
     } else {
         gsm_properties("9", "tmo");
