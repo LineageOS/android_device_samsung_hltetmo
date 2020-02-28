@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
-   Copyright (c) 2017-2018, The LineageOS Project. All rights reserved.
+   Copyright (c) 2017-2020, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -31,48 +31,11 @@
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 
-#include "property_service.h"
 #include "vendor_init.h"
 
 #include "init_msm8974.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
-
-void set_rild_libpath(char const *variant)
-{
-    std::string libpath("/system/vendor/lib/libsec-ril.");
-    libpath += variant;
-    libpath += ".so";
-
-    property_override("rild.libpath", libpath.c_str());
-}
-
-void cdma_properties(char const *operator_alpha,
-        char const *operator_numeric,
-        char const *default_network,
-        char const *cdma_sub,
-        char const *rild_lib_variant)
-{
-    /* Dynamic CDMA Properties */
-    property_set("ro.cdma.home.operator.alpha", operator_alpha);
-    property_set("ro.cdma.home.operator.numeric", operator_numeric);
-    property_set("ro.telephony.default_network", default_network);
-    property_set("ro.telephony.default_cdma_sub", cdma_sub);
-    set_rild_libpath(rild_lib_variant);
-
-    /* Static CDMA Properties */
-    property_set("ril.subscription.types", "NV,RUIM");
-    property_set("telephony.lteOnCdmaDevice", "1");
-}
-
-void gsm_properties(char const *rild_lib_variant)
-{
-    set_rild_libpath(rild_lib_variant);
-
-    property_set("ro.telephony.default_network", "9");
-    property_set("telephony.lteOnGsmDevice", "1");
-}
 
 void init_target_properties()
 {
@@ -88,30 +51,30 @@ void init_target_properties()
         property_override("ro.build.description", "hlteusc-user 5.0 LRX21V N900R4TYUDPE2 release-keys");
         property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900R4");
         property_override_dual("ro.product.device", "ro.product.vendor.device", "hlteusc");
-        cdma_properties("U.S. Cellular", "311220", "10", "0", "usc");
+        cdma_properties("U.S. Cellular", "311220", "0", "10", "usc");
     } else if (bootloader.find("N900T") == 0) {
         /* hltetmo */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltetmo/hltetmo:5.0/LRX21V/N900TUVUFQD2:user/release-keys");
         property_override("ro.build.description", "hltetmo-user 5.0 LRX21V N900TUVUFQD2 release-keys");
         property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900T");
         property_override_dual("ro.product.device", "ro.product.vendor.device", "hltetmo");
-        gsm_properties("tmo");
+        gsm_properties("9", "tmo");
     } else if (bootloader.find("N900V") == 0) {
         /* hltevzw */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Verizon/hltevzw/hltevzw:5.0/LRX21V/N900VVRSEPL1:user/release-keys");
         property_override("ro.build.description", "hltevzw-user 5.0 LRX21V N900VVRSEPL1 release-keys");
         property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900V");
         property_override_dual("ro.product.device", "ro.product.vendor.device", "hltevzw");
-        cdma_properties("Verizon", "311480", "10", "1", "vzw");
+        cdma_properties("Verizon", "311480", "1", "10", "vzw");
     } else if (bootloader.find("N900W8") == 0) {
         /* hltecan */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltevl/hltecan:5.0/LRX21V/N900W8VLU2DPG1:user/release-keys");
         property_override("ro.build.description", "hltevl-user 5.0 LRX21V N900W8VLU2DPG1 release-keys");
         property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900W8");
         property_override_dual("ro.product.device", "ro.product.vendor.device", "hltecan");
-        gsm_properties("can");
+        gsm_properties("9", "can");
     } else {
-        gsm_properties("tmo");
+        gsm_properties("9", "tmo");
     }
 
     std::string device = GetProperty("ro.product.device", "");
