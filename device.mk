@@ -21,8 +21,7 @@ $(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
 
 # NFC
 PRODUCT_PACKAGES += \
-    libpn547_fw \
-    nfc_nci.pn54x.default
+    libpn547_fw
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/security_nfc_profile.dat:system/etc/security_nfc_profile.dat \
