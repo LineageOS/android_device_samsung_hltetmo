@@ -1,2 +1,2 @@
 # Radio - pinned to N900W8VLU2DPG1_N900W8OYADPG1_RWC
-lib/libsec-ril.so:vendor/lib/libsec-ril.can.so|5e39c98f1dde89b85af4fbcae0b41fa176ef3606
+lib/libsec-ril.so:vendor/lib/libsec-ril.can.so|c8dd770b5f621d0ac99d31fd2fdf3bd5c10e5ada

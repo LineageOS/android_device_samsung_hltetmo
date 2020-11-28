@@ -1,2 +1,2 @@
 # Radio - pinned to N900TUVUFQD2_N900TTMBFQD2_TMB
-lib/libsec-ril.so:vendor/lib/libsec-ril.tmo.so|3008534fba31ebe71f9690afe4bf8786a28cf8c8
+lib/libsec-ril.so:vendor/lib/libsec-ril.tmo.so|7f294fd73dd483adcd61e3873ca960c180c5c3d6
